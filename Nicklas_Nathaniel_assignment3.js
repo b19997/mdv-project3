@@ -31,8 +31,8 @@ var concert = " The Mayhem Fest ",
     numOfBands = 26,
     membersSigning = 5;
 
-console.log(friends)
-console.log("Are going to see" + concert)
+console.log(friends);
+console.log("Are going to see" + concert);
 
     
 var friends = [
@@ -50,9 +50,74 @@ var wants= [
 for (var i=0, j=friends.length; i < j;i++) {
 	console.log(friends[i] + " can not wait " + wants[i] );
 };
+ 
+var arrive = "parking the car",
+    walking = " walking in line",
+    enter = "finally in ",
+    search = " patted down by guard",
+    remove = " remove all items that can be used as a weapon";
+    
+  console.log( arrive + walking + search); {
+              if (search = true){ 
+              console.log(enter);
+              } else {
+                 console.log(remove);
+                 };
+};
 
+var numberOfBands = 26,
+    movement =[ 
+     " A band has started playing ", 
+     " Run from the mosh pit ",
+     " Run right ",
+     " Run left ",
+     " the band has stopped playing "
+    ];
 
+var countdown = function(numberOfBands) {
+	while (numberOfBands > 0) {
+	     console.log(movement)
+	     numberOfBands--;
+            
+            if (numberOfBands === 13){
+                console.log(" Time for a break ");
+            };
+              
+            if (numberOfBands > 0) {
+	            console.log(numberOfBands + " On to the next ");
+	            };
+            
+var handleData = function (json) {
+    for (var i = 0; i < json.band.length; i++){
+    var band = json.band[i];
+    console.log("name: " + band.name + "stage: " + band.stage + "time: " + band.time);
+    };
+};    
 
+handleData(json);
+
+var jsonstring = JSON.stringify(json);
+    console.log(jsonstring); 
+
+var recievedjson = JSON.parse(jsonstring);
+    console.log(recievedjson);    
+    
+var countdown = function(numberOfBands) {
+	while (numberOfBands > 0) {
+	     console.log(movement)
+	     numberOfBands--;
+            
+            if (numberOfBands > 0) {
+	        console.log(numberOfBands + " On to the next ");
+	      
+            
+            } else {
+	             console.log(concert + " is over!");
+	        }
+	        console.log(" ");
+	}
+}
+countdown(26);
 
 
 
