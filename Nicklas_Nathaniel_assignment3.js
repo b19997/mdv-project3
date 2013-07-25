@@ -1,6 +1,6 @@
 // alert("JavaScript works!");
 
-/*Nathaniel Nicklas
+/* Nathaniel Nicklas
 SDI 1307
 Project 3*/
 
@@ -18,10 +18,42 @@ to see Amon Amarth. Luckily for the three of them each band shares a different s
 
 // Variables
 var concert = " The Mayhem Fest ",
-    friends = [ "Marc", "Mike", "Nathaniel"],
+    friends = [ 
+          "Marc",
+          "Mike",
+          "Nathaniel"
+    ],
+    turn = "Run from mosh pit",
+    play = " A band has started playing",
+    left = "Run left",
+    right = "Run right",
+    
     numOfBands = 26,
     membersSigning = 5;
+
+console.log(friends)
+console.log("Are going to see" + concert)
+
     
-    
-//Story Code
+var friends = [
+    "Marc",
+    "Mike",
+    "Nathaniel"
+];
+
+var wants= [
+    "to see Born of Osiris",
+    "to see Machine Head",
+    "to see Amon Amarth"
+];
+
+for (var i=0, j=friends.length; i < j;i++) {
+	console.log(friends[i] + " can not wait " + wants[i] );
+};
+
+
+
+
+
+
 
