@@ -65,6 +65,23 @@ var arrive = "parking the car",
                  };
 };
 
+
+                       
+var handleData = function (json) {
+    for (var i = 0; i < json.band.length; i++){
+    var band = json.band[i];
+    console.log("name: " + band.name + "stage: " + band.stage + "time: " + band.time);
+    };
+  };    
+
+handleData(json);
+
+var jsonstring = JSON.stringify(json);
+    console.log(jsonstring); 
+
+var recievedjson = JSON.parse(jsonstring);
+    console.log(recievedjson);    
+	      
 var numberOfBands = 26,
     movement =[ 
      " A band has started playing ", 
@@ -76,43 +93,13 @@ var numberOfBands = 26,
 
 var countdown = function(numberOfBands) {
 	while (numberOfBands > 0) {
-	     console.log(movement)
+	     console.log(numberOfBands + movement);
 	     numberOfBands--;
-            
-            if (numberOfBands === 13){
-                console.log(" Time for a break ");
-            };
-              
-            if (numberOfBands > 0) {
-	            console.log(numberOfBands + " On to the next ");
-	            };
-            
-var handleData = function (json) {
-    for (var i = 0; i < json.band.length; i++){
-    var band = json.band[i];
-    console.log("name: " + band.name + "stage: " + band.stage + "time: " + band.time);
-    };
-};    
+	        if (numberOfBands > 0) {
+	        console.log(numberOfBands + " on to the next!");
 
-handleData(json);
-
-var jsonstring = JSON.stringify(json);
-    console.log(jsonstring); 
-
-var recievedjson = JSON.parse(jsonstring);
-    console.log(recievedjson);    
-    
-var countdown = function(numberOfBands) {
-	while (numberOfBands > 0) {
-	     console.log(movement)
-	     numberOfBands--;
-            
-            if (numberOfBands > 0) {
-	        console.log(numberOfBands + " On to the next ");
-	      
-            
-            } else {
-	             console.log(concert + " is over!");
+	        } else {
+	             console.log(concert + " is finally over, what a blast that was! ")
 	        }
 	        console.log(" ");
 	}
@@ -120,5 +107,4 @@ var countdown = function(numberOfBands) {
 countdown(26);
 
 
-
-
+         
