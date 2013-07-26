@@ -23,14 +23,7 @@ var concert = " The Mayhem Fest ",
           "Mike",
           "Nathaniel"
     ],
-    numOfBands = 26,
-    membersSigning = [
-    "Bob", 
-    "Joe",
-    "Ron",
-    "Carl",
-    "Tod"
-    ];
+    numOfBands = 26;
 
 console.log(friends);
 console.log("Are going to see" + concert);
