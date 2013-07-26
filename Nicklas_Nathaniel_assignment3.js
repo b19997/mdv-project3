@@ -23,13 +23,14 @@ var concert = " The Mayhem Fest ",
           "Mike",
           "Nathaniel"
     ],
-    turn = "Run from mosh pit",
-    play = " A band has started playing",
-    left = "Run left",
-    right = "Run right",
-    
     numOfBands = 26,
-    membersSigning = 5;
+    membersSigning = [
+    "Bob", 
+    "Joe",
+    "Ron",
+    "Carl",
+    "Tod"
+    ];
 
 console.log(friends);
 console.log("Are going to see" + concert);
@@ -102,9 +103,15 @@ var countdown = function(numberOfBands) {
 	             console.log(concert + " is finally over, what a blast that was! ")
 	        }
 	        console.log(" ");
-	}
-}
+	        
+	};
+	return (numberOfBands);
+};
 countdown(26);
+
+var returnedNumberOfBands =  countdown(numberOfBands);
+    console.log(returnedNumberOfBands);
+
 
 
          
